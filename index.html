@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SkyCast — Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="clear">
+    <main class="container">
+      <div class="weather-card">
+        <div class="search">
+          <input type="text" id="city-input" placeholder="Enter city name..." autocomplete="off">
+          <button id="search-btn" aria-label="Search">🔍</button>
+        </div>
+
+        <div class="weather-info" id="weather-display" style="display: none;">
+          <div id="weather-icon" class="weather-emoji">🌤️</div>
+          <h1 id="temp">22°C</h1>
+          <h2 id="city-name">London</h2>
+
+          <div class="details">
+            <div class="col">
+              <p class="humidity" id="humidity">50%</p>
+              <p>Humidity</p>
+            </div>
+            <div class="col">
+              <p class="wind" id="wind">15 km/h</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+
+        <p id="error" class="error-msg" style="display:none;">City not found! ❌</p>
+      </div>
+
+      <footer class="attribution">Data from <a href="https://api-ninjas.com/" target="_blank" rel="noopener">API Ninjas</a></footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
